@@ -1,1 +1,7 @@
 note for chapter 02
+
+1. mov ah = B4
+2. mov al = B0
+3. int = CD
+4. jump $ = EB FE 跳转到当前地址，无线循环
+5. 10 中断（int）会把al的数据打印到屏幕
