@@ -1,2 +1,7 @@
 Note for chapter 7
-1. 
+1. 16bit 的地址空间是64k, segment 机制拓展了这个地址空间
+2. 集中 segment register:cs, ss, es, ds
+3. cylinder，head，sector 概念
+
+问题：
+1. segment 拓展了地址空间，但es 等寄存器不还是2 byte 的空间吗？
