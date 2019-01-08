@@ -1,0 +1,10 @@
+Note for Chapter 5
+1. je = jump if equal; compare value by using cmp instruction。etc. jle,<less or equals> jge <greater or equals>
+2. carriage return = 0x0d which is the source meaning of chinese "回车"
+3. by using call & ret ；cpu save and return to calling address for you
+4. 减法 sub
+5. 右移 ror，左移 rol 单位是bit
+
+问题：
+1. sp的地址是0x6ef0 bp是0x0000，不明白
+2. pusha 和 popa 需要同时使用，不然方法不能正常执行，但方式实际上没有用到堆栈的数据，按理没有影响
