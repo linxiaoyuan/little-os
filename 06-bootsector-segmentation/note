@@ -1,0 +1,4 @@
+Note for chapter 6
+1. 基地寻址方法 [es:the_secret]
+2. 段地址的计算方式是 左移 4 bit + 偏移地址
+3. 默认的段寄存器是ds  <data segment？>
