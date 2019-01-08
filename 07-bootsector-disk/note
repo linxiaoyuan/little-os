@@ -1,7 +1,8 @@
 Note for chapter 7
 1. 16bit 的地址空间是64k, segment 机制拓展了这个地址空间
 2. 集中 segment register:cs, ss, es, ds
-3. cylinder，head，sector 概念
+3. tracks, cylinder，head，sector 概念，sector为最小空间单位，512byte
+4. 中心的tracks数据密度更高，是的数据刷头在相同时间内读完一个sector
 
 问题：
 1. segment 拓展了地址空间，但es 等寄存器不还是2 byte 的空间吗？
