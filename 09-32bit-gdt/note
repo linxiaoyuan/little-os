@@ -1,0 +1,11 @@
+Note for chapter 9
+1. 32bit 模式，寄存器为32bit，前缀e表示，如 mov ebx 0x12345678
+2. 32bit 地址空间为 4GB
+3. segment 多了一个特权级控制；可以用虚拟空间了；中断更复杂了
+4. GDT global descriptor table 描述segment 和它 的模式，和特权级有关
+5. 切换到32bit就不能用BIOS了
+6. 如果在16bit模式，可以用这种方法访问到超出16bit地址空间的数据
+    mov bx , 0 x4000
+    mov es , bx
+    mov [es :0 xfe56 ], ax   #看样子间址访问的方式可以超出寄存器的长度
+

@@ -1,0 +1,9 @@
+alias qemu='qemu-system-x86_64'
+
+nasm -fbin boot_sect_hello.asm -o boot_sect_hello.bin
+
+function nasmrun() {
+    A=$(echo $1 | sed -n -e "s/.asm/.bin/p")
+    nasm -fbin $1 -o $A
+    qemu $A
+}
