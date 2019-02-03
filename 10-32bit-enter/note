@@ -1,0 +1,4 @@
+note for 10
+1. pipeline 管道技术，使命令并行执行，但有个问题，取的命令可能和cpu的模式不匹配，比如取16bit 的命令到pipeline中，但过程中切换了cpu 至32bit，则会导致用32bit的cpu模式去处理16bit的指令
+2. far jump， 可以冲掉pipeline 中的指令 farjump ： jmp <segment >: < address offset >
+3. [bit 32] 会告诉编译器用32位模式来编译指令 
