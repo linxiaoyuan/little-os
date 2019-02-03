@@ -8,4 +8,4 @@ Note for chapter 9
     mov bx , 0 x4000
     mov es , bx
     mov [es :0 xfe56 ], ax   #看样子间址访问的方式可以超出寄存器的长度
-
+7.cli clear interrupt
